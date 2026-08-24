@@ -1,0 +1,28 @@
+.guide-article-hero { max-width: 1130px; margin: auto; padding: clamp(3.5rem, 7vw, 6.4rem) clamp(1rem, 3vw, 2rem) 3rem; }
+.guide-hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .55fr); gap: clamp(1.5rem, 6vw, 5rem); align-items: end; margin-top: 2.4rem; }
+.guide-hero-grid h1 { max-width: 790px; margin: .65rem 0 1rem; color: var(--navy); font-size: clamp(3rem, 6.2vw, 6.2rem); line-height: .9; letter-spacing: -.08em; }
+.guide-hero-grid h1 em { display: block; margin-top: .18rem; color: var(--blue); font-family: var(--serif); font-weight: 400; letter-spacing: -.045em; }
+.guide-hero-grid > div:first-child > p { max-width: 680px; color: var(--slate); font-size: 1rem; line-height: 1.75; }
+.guide-signal-panel { position: relative; overflow: hidden; padding: .85rem; background: var(--navy); color: #fff; box-shadow: 11px 11px 0 var(--blue-soft); }
+.guide-signal-panel::before { position: absolute; top: 0; right: 14%; bottom: 0; width: 1px; background: var(--blue); content: ""; }
+.guide-signal-top { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .75rem; border-bottom: 1px solid rgba(207, 226, 255, .25); color: #a7c8ff; font-size: .57rem; font-weight: 800; letter-spacing: .1em; }
+.guide-signal-row { position: relative; z-index: 1; display: grid; grid-template-columns: 92px 1fr; gap: .65rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid rgba(207, 226, 255, .18); }
+.guide-signal-row:last-child { border: 0; }
+.guide-signal-row span { color: #9cc8ff; font-size: .54rem; font-weight: 800; letter-spacing: .08em; }
+.guide-signal-row strong { font-size: .78rem; line-height: 1.25; }
+.guide-article-layout { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 5rem); max-width: 1130px; margin: 0 auto 6rem; padding: 0 clamp(1rem, 3vw, 2rem); }
+.guide-rail { position: sticky; top: 1rem; align-self: start; display: flex; flex-direction: column; gap: .62rem; padding-top: 1.2rem; border-top: 4px solid var(--blue); }
+.guide-rail span { margin-bottom: .35rem; color: var(--blue); font-size: .58rem; font-weight: 800; letter-spacing: .12em; }
+.guide-rail a { color: var(--slate); font-size: .69rem; font-weight: 700; }
+.guide-rail a:hover { color: var(--blue); transform: translateX(2px); }
+.guide-article-body > section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+.guide-lede { margin: 0 0 3rem; padding: 1.35rem 1.4rem; border-left: 4px solid var(--navy); background: var(--mist); color: var(--navy); font-family: var(--serif); font-size: 1.35rem; line-height: 1.35; }
+.guide-article-body h2 { max-width: 720px; margin: 0 0 1rem; color: var(--navy); font-size: clamp(1.85rem, 3.3vw, 3rem); line-height: 1.02; letter-spacing: -.055em; }
+.guide-article-body > section > p { max-width: 710px; margin: 0; color: var(--slate); font-size: .88rem; line-height: 1.75; }
+.guide-action-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 1.4rem; border: 1px solid var(--line); background: var(--line); }
+.guide-action-list p { min-height: 132px; margin: 0; padding: 1rem; background: #fff; color: var(--slate); font-size: .75rem; line-height: 1.6; }
+.guide-action-list svg { display: block; margin-bottom: 1.1rem; color: var(--teal); }
+.guide-practice-note { position: relative; padding: 1.8rem !important; overflow: hidden; border: 0 !important; background: var(--navy); color: #fff; }
+.guide-practice-note::after { position: absolute; right: -10px; bottom: -25px; width: 130px; height: 130px; border: 1px solid rgba(172, 206, 255, .22); box-shadow: -18px 18px 0 rgba(40, 119, 255, .18); content: ""; }
+.guide-practice-note .body-label { color: #a7c8ff; }.guide-practice-note .body-label span { background: rgba(255, 255, 255, .13); color: #a7c8ff; }.guide-practice-note h2 { color: #fff; }.guide-practice-note h2 em { color: #a7c8ff; font-family: var(--serif); font-weight: 400; }.guide-practice-note p { position: relative; z-index: 1; color: #c7d4e3 !important; }.guide-practice-note svg { position: absolute; z-index: 1; top: 1.8rem; right: 1.8rem; color: #a7c8ff; }
+@media (max-width: 760px) { .guide-hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }.guide-article-layout { grid-template-columns: 1fr; margin-bottom: 4rem; }.guide-rail { position: static; display: grid; grid-template-columns: repeat(2, 1fr); gap: .45rem; padding: 1rem; border-top: 4px solid var(--blue); background: var(--mist); }.guide-rail span { grid-column: 1 / -1; margin: 0; }.guide-article-body > section { padding: 2rem 0; }.guide-lede { margin-bottom: 2rem; padding: 1.1rem; font-size: 1.15rem; }.guide-action-list { grid-template-columns: 1fr; }.guide-action-list p { min-height: 0; }.guide-action-list svg { display: inline-block; vertical-align: middle; margin: 0 .35rem 0 0; } }

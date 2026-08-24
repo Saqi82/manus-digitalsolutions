@@ -1,0 +1,16 @@
+.bss-fit-feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:1px;margin:2.4rem -2.2rem 2.1rem;border:1px solid #163d68;background:#163d68;box-shadow:12px 12px 0 rgba(30,107,255,.11)}
+.bss-fit-feature>div{position:relative;padding:2rem;background:#fff}
+.bss-fit-feature>div::after{position:absolute;right:-1px;top:1.5rem;bottom:1.5rem;width:4px;background:var(--blue);content:""}
+.bss-fit-feature span{display:block;color:var(--blue);font-size:.59rem;font-weight:800;letter-spacing:.1em}
+.bss-fit-feature h2{max-width:410px;margin:.85rem 0 1rem;color:var(--navy);font-size:clamp(1.45rem,2.4vw,2.25rem);line-height:1.05;letter-spacing:-.05em}
+.bss-fit-feature>div>p{max-width:400px;margin:0;color:var(--slate);font-size:.8rem;line-height:1.72}
+.bss-fit-feature a{display:inline-flex;align-items:center;gap:.35rem;margin-top:1.35rem;color:var(--blue);font-size:.72rem;font-weight:800}
+.bss-fit-feature aside{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:1px;padding:1.45rem;background:var(--navy);color:#fff;overflow:hidden}
+.bss-fit-feature aside::before{position:absolute;right:1.5rem;top:1.4rem;width:66px;height:66px;border:1px solid rgba(157,196,255,.55);box-shadow:-9px 9px 0 rgba(30,107,255,.35);content:""}
+.bss-fit-feature aside>span{grid-column:span 2;color:#a3c8ff}
+.bss-fit-feature aside>div{position:relative;z-index:1;display:flex;gap:.55rem;align-items:center;padding:.65rem;background:#102b51}
+.bss-fit-feature aside i{display:grid;place-items:center;width:23px;height:23px;border:1px solid #548cf0;color:#9bc2ff;font-size:.57rem;font-style:normal}
+.bss-fit-feature aside p{margin:0;color:#d5e2f1;font-size:.69rem;line-height:1.35}
+.bss-fit-feature aside p b{display:block;color:#fff;font-size:.56rem;letter-spacing:.08em}
+.bss-fit-feature aside>strong{grid-column:span 2;position:relative;z-index:1;padding-top:.55rem;border-top:1px solid #315980;color:#a3c8ff;font-size:.56rem;letter-spacing:.08em}
+@media(max-width:760px){.bss-fit-feature{grid-template-columns:1fr;margin:1.7rem 0}.bss-fit-feature>div::after{right:1.5rem;left:1.5rem;top:auto;bottom:0;width:auto;height:4px}.bss-fit-feature h2{max-width:none}}

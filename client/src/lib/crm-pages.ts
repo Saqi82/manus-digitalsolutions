@@ -1,0 +1,48 @@
+export const crmClusterSlugs = new Set([
+  "crm-software",
+  "crm-for-small-business",
+  "best-crm-for-small-business",
+  "free-crm-for-small-business",
+  "simple-crm-software",
+  "crm-software-for-startups",
+  "crm-software-comparison",
+  "best-free-crm-software",
+]);
+
+export const crmKeywordPages = [
+  {
+    slug: "crm-for-small-business", title: "CRM for Small Business", keyword: "CRM for small business", path: "/crm-for-small-business/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / practical follow-up",
+    description: "Explore CRM for small business by focusing on customer context, consistent follow-up and the routines a small team can realistically maintain.", lead: "CRM for small business works best when it gives a small team a shared, workable view of conversations, next actions and customer history. Start with the relationship routine that needs more consistency, not a long feature list.", decision: "Which customer conversation or follow-up routine would become more reliable with a clearer shared view?",
+    signals: [{ label: "CUSTOMER", value: "Keep the context" }, { label: "TEAM", value: "Make ownership visible" }, { label: "FOLLOW-UP", value: "Protect the next action" }], checkpoints: [{ title: "Map the current relationship routine", detail: "Identify where enquiries, conversations and customer notes live today." }, { title: "Keep the team view practical", detail: "Check that the people involved can update and use the system easily." }, { title: "Test a real follow-up", detail: "Use an active customer example to confirm the next action is clear." }], related: [],
+  },
+  {
+    slug: "best-crm-for-small-business", title: "Best CRM for Small Business", keyword: "best CRM for small business", path: "/best-crm-for-small-business/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / fit framework",
+    description: "Use this best CRM for small business framework to compare customer-management options around workflow fit, team capacity and customer follow-up needs.", lead: "The best CRM for small business is not a universal product verdict. It is the option that helps your team maintain customer context, complete the right follow-up and support the routine you actually run.", decision: "What would make a CRM the most useful fit for your small business rather than simply the most feature-rich option?",
+    signals: [{ label: "FIT", value: "Start with the job" }, { label: "TRIAL", value: "Use a real customer case" }, { label: "DECIDE", value: "Confirm the next step" }], checkpoints: [{ title: "Define the evaluation task", detail: "Choose the customer routine that any shortlisted CRM must improve." }, { title: "Use realistic examples", detail: "Test contacts, conversations and follow-up steps that resemble real work." }, { title: "Compare the ongoing effort", detail: "Consider setup, adoption and the work needed to keep records useful." }], related: [],
+  },
+  {
+    slug: "free-crm-for-small-business", title: "Free CRM for Small Business", keyword: "free CRM for small business", path: "/free-crm-for-small-business/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / bounded start",
+    description: "Explore free CRM for small business through a practical framework for checking customer workflows, limits and the next step before relying on a service.", lead: "A free CRM for small business can be a useful starting point when its scope matches the immediate customer routine. Check what the team needs now, what the service includes and what will need reviewing as the work changes.", decision: "Which customer-management need can a free CRM support now, and what would you need to verify before relying on it further?",
+    signals: [{ label: "START", value: "Choose the immediate need" }, { label: "SCOPE", value: "Check the included workflow" }, { label: "GROW", value: "Keep the next threshold visible" }], checkpoints: [{ title: "Set a bounded starting task", detail: "Choose the customer record or follow-up routine that matters most right now." }, { title: "Check current scope", detail: "Confirm the present service limits and the workflow they affect directly with the provider." }, { title: "Plan a review point", detail: "Know when the team will revisit fit as customer activity or needs change." }], related: [],
+  },
+  {
+    slug: "simple-crm-software", title: "Simple CRM Software", keyword: "simple CRM software", path: "/simple-crm-software/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / everyday use",
+    description: "Explore simple CRM software by focusing on the customer information, clear next actions and low-friction routines a team will actually use.", lead: "Simple CRM software should make customer context and follow-up easier to find without creating another complicated process. Look for a clear routine that the people doing the work can keep current.", decision: "What needs to stay simple for a CRM to remain useful every day?",
+    signals: [{ label: "RECORD", value: "Keep the context clear" }, { label: "NEXT", value: "Show the action" }, { label: "ADOPT", value: "Make it easy to use" }], checkpoints: [{ title: "Reduce the essential workflow", detail: "Identify the minimum customer information and actions the team needs to see." }, { title: "Check everyday usability", detail: "Use a typical conversation and follow-up to assess the interface and routine." }, { title: "Protect consistency", detail: "Agree a light shared approach for updating information and actions." }], related: [],
+  },
+  {
+    slug: "crm-software-for-startups", title: "CRM Software for Startups", keyword: "CRM software for startups", path: "/crm-software-for-startups/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / evolving process",
+    description: "Explore CRM software for startups by balancing a clear customer process today with a reviewable approach as roles and routines evolve.", lead: "CRM software for startups should help a growing team retain customer context while its processes are still taking shape. Start with the immediate relationship workflow, then choose an approach that can be reviewed as the business learns.", decision: "Which customer process needs structure now while still leaving room for the team to learn and adapt?",
+    signals: [{ label: "NOW", value: "Support the current motion" }, { label: "LEARN", value: "Capture the useful context" }, { label: "ADAPT", value: "Review as roles change" }], checkpoints: [{ title: "Map the current customer motion", detail: "Follow the route from first interest to the next meaningful relationship step." }, { title: "Keep learning visible", detail: "Make it easy to see questions, objections and customer context across the team." }, { title: "Review the process regularly", detail: "Revisit the workflow when roles, volume or customer needs change." }], related: [],
+  },
+  {
+    slug: "crm-software-comparison", title: "CRM Software Comparison", keyword: "CRM software comparison", path: "/crm-software-comparison/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / compare the workflow",
+    description: "Use this CRM software comparison framework to compare options against customer context, ownership, follow-up and practical adoption requirements.", lead: "A CRM software comparison is most useful when every option is tested against the same customer workflow. Compare the work, the team, the information and the review points—not only a feature checklist.", decision: "Which customer workflow should every CRM option be able to support from first contact to follow-up?",
+    signals: [{ label: "SAME JOB", value: "Set the comparison task" }, { label: "SAME TEST", value: "Use shared criteria" }, { label: "SAME CHECK", value: "Compare adoption work" }], checkpoints: [{ title: "Define the comparison criteria", detail: "Use a single set of customer and team tasks for every option." }, { title: "Test the same scenario", detail: "Compare the complete workflow using the same realistic contact and follow-up." }, { title: "Check implementation effort", detail: "Consider data, roles, adoption and provider details before you decide." }], related: [],
+  },
+  {
+    slug: "best-free-crm-software", title: "Best Free CRM Software", keyword: "best free CRM software", path: "/best-free-crm-software/", hubPath: "/business-software/", hubLabel: "Business Software", eyebrow: "CRM category / evidence-led choice",
+    description: "Use this best free CRM software framework to evaluate free options around immediate workflow fit, current scope and the conditions you need to verify.", lead: "The best free CRM software depends on the customer process you need to support, the team that will maintain it and the service scope you can confirm today. Use a real task to evaluate fit instead of relying on a broad ranking.", decision: "What evidence would show that a free CRM is the right fit for your current customer routine?",
+    signals: [{ label: "NEED", value: "Name the current task" }, { label: "EVIDENCE", value: "Test the full routine" }, { label: "VERIFY", value: "Check the service details" }], checkpoints: [{ title: "Focus the evaluation", detail: "Identify the customer workflow that matters most at the current stage." }, { title: "Test with real work", detail: "Use an active contact, conversation and next action to check practical fit." }, { title: "Confirm current details", detail: "Verify scope, limits and any relevant provider conditions before relying on the service." }], related: [],
+  },
+];

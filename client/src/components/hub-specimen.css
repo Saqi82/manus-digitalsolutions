@@ -1,0 +1,86 @@
+.generic-specimen {
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+  background: linear-gradient(135deg, #071a32 0 49.5%, #1f66df 49.5% 50.5%, #0d2748 50.5% 100%);
+}
+
+.generic-specimen-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0;
+  margin-top: 1.35rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--navy);
+}
+
+.generic-specimen-grid > i { background: var(--blue); }
+
+.generic-specimen-grid div {
+  min-height: 78px;
+  padding: .75rem;
+}
+
+.generic-specimen-grid div:last-child { background: #dceaff; }
+
+.generic-specimen-grid span {
+  display: block;
+  color: var(--blue);
+  font-size: .55rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.generic-specimen-grid b {
+  display: block;
+  margin-top: .48rem;
+  font-size: .76rem;
+  line-height: 1.15;
+}
+
+.generic-specimen .specimen-prompt {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  margin: auto 0 0;
+  padding-top: .85rem;
+  color: #c7d4e3;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+}
+
+.hub-decision-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.35rem 0 .75rem;
+  padding: .85rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  background: var(--mist);
+}
+
+.hub-decision-note span { color: var(--blue); font-size: .58rem; font-weight: 800; letter-spacing: .1em; }
+.hub-decision-note p { margin: 0; color: var(--navy); font-size: .78rem; font-weight: 750; line-height: 1.4; }
+.hub-decision-note b { color: var(--slate); font-size: .62rem; letter-spacing: .08em; }
+
+.indexed-hub-card:nth-child(2) { background: #f4f8ff; }
+.indexed-hub-card:nth-child(3) { border-top: 3px solid var(--blue); }
+.indexed-hub-card:nth-child(4) { background: var(--navy); }
+.indexed-hub-card:nth-child(4) h2 { color: #fff; }
+.indexed-hub-card:nth-child(4) p { color: #c5d3e2; }
+
+.brand-lockup > span { letter-spacing: -.055em; }
+.brand-lockup > span > span { letter-spacing: -.07em; }
+.brand-lockup > span > i { margin-left: .07em; font-size: .82em; letter-spacing: -.02em; }
+
+@media (max-width: 760px) {
+  .generic-specimen { min-height: 0; }
+  .generic-specimen-grid { margin-top: 1rem; }
+  .generic-specimen-grid div { min-height: 66px; }
+  .hub-decision-note { grid-template-columns: 1fr; gap: .35rem; }
+}

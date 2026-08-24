@@ -21,3 +21,7 @@ Add an explicit Wasmer static-site configuration so the platform uses a declared
 The project now contains a root `Anybuild` manifest using Anybuild’s documented `node-static` provider. The key safeguard is `node_install_requires_all_files = True`: Anybuild’s own Node provider source shows that this switches installation from lockfile-only staging to source staging before `pnpm install`. The manifest also explicitly sets Vite, pnpm, Node 22 and `dist/public`.
 
 Wasmer’s `_redirects` conversion accepts only 301 and 302 rules, so a Netlify-style `200` SPA rewrite would be rejected. Direct nested-route behaviour should therefore be tested on Wasmer after deployment and configured in serving settings if needed.
+
+## pnpm 11 follow-up
+
+The active Wasmer build uses pnpm 11.23.0, while the original project declared pnpm 10.4.1. The declaration now matches pnpm 11.23.0. Legacy `pnpm` configuration from `package.json` was moved to `pnpm-workspace.yaml`, which pnpm 11 reads. The workspace file also records Wasmer’s required Vite/Tailwind build dependencies through pnpm 11’s `allowBuilds` setting. A pnpm 11 frozen install, TypeScript check and production build all succeeded locally.

@@ -10,6 +10,10 @@ The root-level `Anybuild` manifest explicitly configures the project as a **Vite
 
 The manifest is based on Wasmer’s documented Node-static Vite manifest structure. It intentionally does not use the project’s Express deployment scaffold because Wasmer should publish the generated static frontend, not run the development server.
 
+## pnpm 11 compatibility
+
+Wasmer’s Node 22 builder invokes pnpm **11.23.0** through Corepack. The root `package.json` therefore declares `"packageManager": "pnpm@11.23.0"`. pnpm 11 reads overrides, patched-dependency settings and build-script approvals from `pnpm-workspace.yaml`; that file retains the existing dependency resolution settings and permits the trusted build scripts for `@tailwindcss/oxide` and `esbuild` that Vite and Tailwind require.
+
 ## Wasmer Git deployment settings
 
 Connect the `main` branch of `Saqi82/manus-digitalsolutions` to the Wasmer app. Once this commit is present, trigger a new deployment. Wasmer should detect the repository `Anybuild` file and use it rather than generating the faulty inferred plan.
@@ -18,7 +22,7 @@ Connect the `main` branch of `Saqi82/manus-digitalsolutions` to the Wasmer app. 
 |---|---|
 | Project type | Vite static site / Node static |
 | Node runtime | 22 |
-| Package manager | pnpm |
+| Package manager | pnpm 11.23.0 |
 | Build command | `pnpm run build` |
 | Static output | `dist/public` |
 

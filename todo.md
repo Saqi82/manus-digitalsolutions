@@ -18,3 +18,13 @@
 - [x] Identify the supported Wasmer configuration that ensures `package.json` is available before dependency installation.
 - [x] Add a deployment-compatible configuration without changing the current Vite build output.
 - [x] Validate the configuration locally, publish it to GitHub and document the redeployment steps.
+
+## Wasmer pnpm Compatibility
+
+- [x] Apply the pnpm 11.23.0 compatibility repair to the confirmed `Saqi82/manus-digitalsolutions` deployment source.
+- [x] Confirm which GitHub repository and commit Wasmer is currently deploying.
+- [x] Update the package-manager declaration so Corepack uses a compatible pnpm release.
+- [x] Move legacy pnpm package settings into the pnpm 11 workspace configuration.
+- [x] Approve the project’s trusted Vite and Tailwind build-time dependencies for pnpm 11.
+- [x] Validate a frozen pnpm install and production build with the aligned configuration.
+- [x] Publish the repair to the active deployment repository and provide redeployment guidance.

@@ -17,4 +17,4 @@
 - [x] Confirm the build-log root cause and the project files affected by Wasmer’s static-site detection.
 - [x] Identify the supported Wasmer configuration that ensures `package.json` is available before dependency installation.
 - [x] Add a deployment-compatible configuration without changing the current Vite build output.
-- [ ] Validate the configuration locally, publish it to GitHub and document the redeployment steps.
+- [x] Validate the configuration locally, publish it to GitHub and document the redeployment steps.

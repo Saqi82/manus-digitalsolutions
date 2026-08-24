@@ -28,3 +28,10 @@
 - [x] Approve the project’s trusted Vite and Tailwind build-time dependencies for pnpm 11.
 - [x] Validate a frozen pnpm install and production build with the aligned configuration.
 - [x] Publish the repair to the active deployment repository and provide redeployment guidance.
+
+## Logo and Favicon
+
+- [x] Inspect the existing DigitalSolutions.cv brand mark and current public-asset references.
+- [x] Prepare a high-resolution logo PNG and multi-size favicon ICO for web delivery.
+- [x] Reference the assets in the site header and document head, then validate the build.
+- [ ] Publish the asset and code updates to `Saqi82/manus-digitalsolutions`.

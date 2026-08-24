@@ -1,0 +1,13 @@
+{
+  "name": "DigitalSolutions.cv",
+  "short_name": "DigitalSolutions",
+  "description": "Practical digital tools, software guides and technology advice for UK businesses and professionals.",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/digitalsolutions-logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ],
+  "theme_color": "#0b1f3a",
+  "background_color": "#f6f8fb",
+  "display": "standalone"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">DigitalSolutions.cv split-window logo</title>
+  <desc id="desc">A navy modular dashboard panel with a blue diagonal signal line.</desc>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#0B1F3A"/>
+  <path d="M13 13.5C13 10.462 15.462 8 18.5 8h26C47.538 8 50 10.462 50 13.5V23H13V13.5Z" fill="#F6F8FB"/>
+  <circle cx="19" cy="15.5" r="1.7" fill="#0B1F3A"/><circle cx="24.5" cy="15.5" r="1.7" fill="#0B1F3A"/><circle cx="30" cy="15.5" r="1.7" fill="#0B1F3A"/>
+  <path d="M13 28h13v22c0 3.314-2.686 6-6 6h-1c-3.314 0-6-2.686-6-6V28Z" fill="#F6F8FB"/>
+  <path d="M31 28h10.5v22c0 3.314-2.686 6-6 6H31V28Z" fill="#BFD6FF"/>
+  <path d="M46.5 28H51c3.314 0 6 2.686 6 6v16c0 3.314-2.686 6-6 6h-4.5V28Z" fill="#F6F8FB"/>
+  <path d="M39.5 6.5H48L35.2 57.5h-8.5L39.5 6.5Z" fill="#1E6BFF"/>
+</svg>

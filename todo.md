@@ -8,6 +8,6 @@
 
 ## GitHub Publication
 
-- [ ] Verify access to `Saqi82/manus-digitalsolutions` and inspect the repository’s existing contents.
-- [ ] Prepare the current shared DigitalSolutions.cv project for a non-destructive repository export.
-- [ ] Publish the complete codebase and verify the remote branch and commit.
+- [x] Verify access to `Saqi82/manus-digitalsolutions` and inspect the repository’s existing contents.
+- [x] Prepare the current shared DigitalSolutions.cv project for a non-destructive repository export.
+- [x] Publish the complete codebase and verify the remote branch and commit.

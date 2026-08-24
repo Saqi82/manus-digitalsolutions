@@ -35,3 +35,10 @@
 - [x] Prepare a high-resolution logo PNG and multi-size favicon ICO for web delivery.
 - [x] Reference the assets in the site header and document head, then validate the build.
 - [x] Publish the asset and code updates to `Saqi82/manus-digitalsolutions`.
+
+## Repository Image Repair
+
+- [x] Inventory every external project-hosted image reference used by the live pages.
+- [x] Recover, optimise and add the corresponding image files under the repository public directory.
+- [x] Replace external image paths with repository-contained static paths and validate the build.
+- [x] Publish the image repair to `Saqi82/manus-digitalsolutions` for Wasmer redeployment.

@@ -42,3 +42,10 @@
 - [x] Recover, optimise and add the corresponding image files under the repository public directory.
 - [x] Replace external image paths with repository-contained static paths and validate the build.
 - [x] Publish the image repair to `Saqi82/manus-digitalsolutions` for Wasmer redeployment.
+
+## Google Analytics
+
+- [x] Inspect the current document-head tracking markup and retain only one Google tag.
+- [x] Add Google Analytics measurement ID `G-01XGMZ4SL4` to the global static document head.
+- [x] Validate the built HTML contains the tag exactly once.
+- [x] Publish the analytics update to `Saqi82/manus-digitalsolutions` and provide verification steps.

@@ -1,8 +1,8 @@
 /** Editorial Terminal: a route-first independent site shell with clear escape routes and accessible interactions. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
+import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -13,6 +13,12 @@ import ArticlePage from "./pages/ArticlePage";
 import GuideArticlePage from "./pages/GuideArticlePage";
 import KeywordLandingPage from "./pages/KeywordLandingPage";
 import TopicAuthorityPage from "./pages/TopicAuthorityPage";
+
+function MissingRouteRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/", { replace: true }); }, [navigate]);
+  return null;
+}
 
 function Router() {
   return <Switch>
@@ -64,9 +70,9 @@ function Router() {
     <Route path="/terms-conditions/"><StaticPage pageKey="terms-conditions" /></Route>
     <Route path="/affiliate-disclosure/"><StaticPage pageKey="affiliate-disclosure" /></Route>
     <Route path="/advertising-disclosure/"><StaticPage pageKey="advertising-disclosure" /></Route>
-    <Route path="/:slug/">{(params) => <KeywordLandingPage slug={params.slug} />}</Route>
-    <Route path="/404" component={NotFound} />
-    <Route component={NotFound} />
+    <Route path="/:slug/"><MissingRouteRedirect /></Route>
+    <Route path="/404"><MissingRouteRedirect /></Route>
+    <Route><MissingRouteRedirect /></Route>
   </Switch>;
 }
 

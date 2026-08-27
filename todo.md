@@ -49,3 +49,10 @@
 - [x] Add Google Analytics measurement ID `G-01XGMZ4SL4` to the global static document head.
 - [x] Validate the built HTML contains the tag exactly once.
 - [x] Publish the analytics update to `Saqi82/manus-digitalsolutions` and provide verification steps.
+
+## Static Route Fallback
+
+- [x] Inspect current routes and confirm the static build destination for Apache fallback files.
+- [x] Add a production `.htaccess` rewrite that serves the React app for non-file paths.
+- [x] Redirect a genuinely unknown client-side route to the homepage.
+- [x] Validate the generated build and publish the fallback repair to `Saqi82/manus-digitalsolutions`.
